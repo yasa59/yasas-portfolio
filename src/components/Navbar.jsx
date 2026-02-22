@@ -52,17 +52,21 @@ export default function Navbar() {
                     href="#hero"
                     whileHover={{ scale: 1.05 }}
                     style={{
-                        fontFamily: "Space Grotesk, sans-serif",
-                        fontWeight: 700,
-                        fontSize: "1.4rem",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
                         textDecoration: "none",
-                        background:
-                            "linear-gradient(135deg, #6c63ff, #43e6fc)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
                     }}
                 >
-                    YA.
+                    <img
+                        src="/logo.png"
+                        alt="YA Logo"
+                        style={{
+                            height: "40px",
+                            width: "auto",
+                            filter: "drop-shadow(0 0 8px rgba(108,99,255,0.4))"
+                        }}
+                    />
                 </motion.a>
 
                 {/* Desktop nav */}

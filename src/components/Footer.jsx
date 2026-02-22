@@ -29,15 +29,20 @@ export default function Footer() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     style={{
-                        fontFamily: "Space Grotesk, sans-serif",
-                        fontSize: "1.6rem",
-                        fontWeight: 700,
-                        background: "linear-gradient(135deg, #6c63ff, #43e6fc)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
                     }}
                 >
-                    YA.
+                    <img
+                        src="/logo.png"
+                        alt="YA Logo"
+                        style={{
+                            height: "50px",
+                            width: "auto",
+                            filter: "drop-shadow(0 0 10px rgba(108,99,255,0.3))"
+                        }}
+                    />
                 </motion.div>
                 <div style={{ display: "flex", gap: 16 }}>
                     {[
